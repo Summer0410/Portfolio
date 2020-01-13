@@ -21,14 +21,27 @@
             <div class = "aboutme">
                 <p>
                     <b>
-                        I am a last computer engineering student at Memorial University of Newfoundland.<br>
+                        I am a last year computer engineering student at Memorial University of Newfoundland<br> 
+                        and I will be graduating in April, 2020.
                         I worked as a full-stack developer and software developer<br>
                         during my work terms.<br>
-                        My personal interests include<br> 
+                        My personal interest includes<br> 
                         web application development, software development,<br>
-                        and test automation.
+                        Docker, and test automation.
                     </br>
                 </p>
+            </div>
+            <div class = "project_gallery">
+                <h1>Project Gallery</h1>
+                <div class = "project_image">
+                    <img src = "image/project/image1.jpeg">
+                    <img src = "image/project/image2.jpeg">
+                    <img src = "image/project/image3.jpeg">
+                    <img src = "image/project/image4.jpeg"> 
+                </div>
+            </div>
+            <div class = blog_gallery>
+                <p>This is blog</p>
             </div>
         </div>
     </body>
@@ -46,14 +59,33 @@
                 $blog = $('.blog'),
                 $intro = $('.intro'),
                 $aboutme = $('.aboutme');
+                $project_gallery = $('.project_gallery')
+                $blog_gallery = $('.blog_gallery')
                 $home.click(function(){
                     $intro  .fadeIn();
                     $aboutme.fadeOut();
+                    $blog_gallery.fadeOut();
+                    $project_gallery.fadeOut();
                 });
                 $about.click(function(){
                     $aboutme.fadeIn();
                     $intro.fadeOut();
+                    $blog_gallery.fadeOut();
+                    $project_gallery.fadeOut();
                 });
+                $project.click(function(){
+                    $project_gallery.fadeIn();
+                    $blog_gallery.fadeOut();
+                    $aboutme.fadeOut();
+                    $intro.fadeOut();
+                })
+                $blog.click(function(){
+                    $blog_gallery.fadeIn();
+                    $aboutme.fadeOut();
+                    $intro.fadeOut();
+                    $project_gallery.fadeOut();
+                })
+                
         })  
     </script>
 </html>
