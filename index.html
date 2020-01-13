@@ -18,6 +18,18 @@
                 <h1>I am Linqiao Xia</h1>
                 <h3>Last Year Computer Engineering Student</h3>
             </div>
+            <div class = "aboutme">
+                <p>
+                    <b>
+                        I am a last computer engineering student at Memorial University of Newfoundland.<br>
+                        I worked as a full-stack developer and software developer<br>
+                        during my work terms.<br>
+                        My personal interests include<br> 
+                        web application development, software development,<br>
+                        and test automation.
+                    </br>
+                </p>
+            </div>
         </div>
     </body>
     <script type = "text/javascript"  src ="js/jquery-3.4.1.min.js"></script>
@@ -28,6 +40,20 @@
                 $('a').removeClass('active');
                 $(current_selected).addClass('active')
             })
+                var $home = $('.home'),
+                $about = $('.about'),
+                $project = $('.project'),
+                $blog = $('.blog'),
+                $intro = $('.intro'),
+                $aboutme = $('.aboutme');
+                $home.click(function(){
+                    $intro  .fadeIn();
+                    $aboutme.fadeOut();
+                });
+                $about.click(function(){
+                    $aboutme.fadeIn();
+                    $intro.fadeOut();
+                });
         })  
     </script>
 </html>
