@@ -5,7 +5,7 @@
         <link rel = "stylesheet" type = "text/css" href = "static/style.css">
     </head>
     <body>
-        <div class="back">
+        <div class="background">
             <nav class="nav">
                 <a class ="home active" href="#">HOME</a>
                 <a class = "about" href="#">ABOUT ME</a>
@@ -13,5 +13,21 @@
                 <a class = "blog" href="#">BLOG</a>
             </nav>
         </div>
+        <div class = "content">
+            <div class = "intro">
+                <h1>I am Linqiao Xia</h1>
+                <h3>Last Year Computer Engineering Student</h3>
+            </div>
+        </div>
     </body>
+    <script type = "text/javascript"  src ="js/jquery-3.4.1.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $('a').click(function(){
+                var current_selected = $(this);
+                $('a').removeClass('active');
+                $(current_selected).addClass('active')
+            })
+        })  
+    </script>
 </html>
