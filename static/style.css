@@ -119,8 +119,8 @@ a.active{
     font-family: verdana;
 }
 .project_gallery .project_image{
-    width:35%;
-    margin:2%;
+    width:38%;
+    margin:3%;
     float:left;
 }
 .project_image img{
@@ -129,7 +129,8 @@ a.active{
     -webkit-transition: all ease 0.5%;
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 0.75;
+    opacity: 0.8;
+    border:3px solid white;
 }
 .project_image img:hover{
     transform: scale(1.2);
@@ -148,7 +149,7 @@ a.active{
 }
 
 .blog_gallery .blog_image{
-    width:60%;
+    width:52%;
     margin:3%;
     float:left;
 }
@@ -158,7 +159,8 @@ a.active{
     -webkit-transition: all ease 0.5%;
     transform: scale(1);
     -webkit-transform: scale(1);
-    opacity: 0.6;
+    opacity: 0.8;
+    border:3px solid white;
 }
 
 .blog_image img:hover{
