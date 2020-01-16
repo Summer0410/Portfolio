@@ -12,7 +12,7 @@ html,body{
 .background{
     width: 100%;
     height: 100%;
-    background-image:url("../image/bg3.jpg");
+    background-image:url("../image/bg3.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -90,24 +90,25 @@ a.active{
     border-bottom: 1px solid white;
 }
 .intro h3 {
-    font-size: 28px;
+    font-size: 36px;
     padding: 5px 0;
     opacity: 0.8;
 }
-.aboutme{
+.aboutme {
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 100px;
     color:whitesmoke;
     font-family: verdana;
+    font-size: 36px;
     padding: 0 60px;
     display: none;
 }
 
 .aboutme p{
-    font-size:24px;
+    font-size:30px;
     line-height: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .project_gallery {
@@ -119,9 +120,9 @@ a.active{
     font-family: verdana;
 }
 .project_gallery .project_image{
-    width:38%;
+    width:26%;
     margin:3%;
-    float:left;
+    float: left;
 }
 .project_image img{
     width:100%;
@@ -149,8 +150,8 @@ a.active{
 }
 
 .blog_gallery .blog_image{
-    width:52%;
-    margin:3%;
+    width:47%;
+    margin:2%;
     float:left;
 }
 .blog_image img {
@@ -164,8 +165,8 @@ a.active{
 }
 
 .blog_image img:hover{
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 .fa {
@@ -183,5 +184,5 @@ a.active{
       position:absolute;
       margin-top: 80px;;
       margin-left: 30px;
-      border-bottom: 3px solid black;
+      border-bottom: 3px solid white;
   }
